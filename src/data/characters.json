@@ -1,0 +1,189 @@
+[
+  {
+    "id": "chen_yanqiu",
+    "name": "陈砚秋",
+    "title": "战术指挥 / 属性变色龙",
+    "element": "none",
+    "role": "main_dps",
+    "preferredSlots": [2, 3],
+    "baseStats": {
+      "hp": 800, "atk": 120, "def": 80, "spd": 10,
+      "sanity": 100, "crit": 0.1, "critDmg": 1.5, "accuracy": 0.95, "dodge": 0.1
+    },
+    "passiveDescription": "装备核心法器时，自身五行属性动态切换，并获得对应属性的10%额外克制伤害。",
+    "lore": "身患活不过30岁的基因锁诅咒，父母失踪，继承盘龙古董铺。凭借战术天赋和命运树状图的时空回溯能力在地下江湖闯荡。",
+    "affinityMax": 0,
+    "questId": "",
+    "trueEndingTokenId": ""
+  },
+  {
+    "id": "tang_ling",
+    "name": "唐绫",
+    "title": "科技射手 / 异管局养女",
+    "element": "metal",
+    "role": "main_dps",
+    "preferredSlots": [3, 4],
+    "baseStats": {
+      "hp": 600, "atk": 180, "def": 50, "spd": 12,
+      "sanity": 80, "crit": 0.25, "critDmg": 2.0, "accuracy": 0.98, "dodge": 0.15
+    },
+    "passiveDescription": "【精准射手】在敌方护盾破碎后，下一次攻击必定暴击且伤害额外提升30%。",
+    "lore": "异管局局长霍老养女，精通现代武器与电磁干扰。内心深处对养父既依赖又质疑，好感度满后知晓养父下令灭口主角父母的真相，彻底撕裂信仰。",
+    "affinityMax": 100,
+    "questId": "quest_tang_ling",
+    "trueEndingTokenId": "token_tangling"
+  },
+  {
+    "id": "fatty",
+    "name": "胖子",
+    "title": "北派肉盾 / 贪财重义",
+    "element": "metal",
+    "role": "tank",
+    "preferredSlots": [1, 2],
+    "baseStats": {
+      "hp": 1400, "atk": 100, "def": 200, "spd": 6,
+      "sanity": 120, "crit": 0.05, "critDmg": 1.3, "accuracy": 0.85, "dodge": 0.05
+    },
+    "passiveDescription": "【钱能通神】每次战斗结束后，掉落的金币与材料数量翻倍。免疫绝望与恐慌状态。",
+    "lore": "北派倒斗世家出身，嗜财如命但重情重义。表面大大咧咧，实则内心有刀。好感度满后与主角一起去还家族阴债，斩杀血玉尸王。",
+    "affinityMax": 100,
+    "questId": "quest_fatty",
+    "trueEndingTokenId": "token_fatty"
+  },
+  {
+    "id": "a_lian",
+    "name": "阿莲",
+    "title": "南派蛊师 / 南疆苗女",
+    "element": "wood",
+    "role": "controller",
+    "preferredSlots": [3, 4],
+    "baseStats": {
+      "hp": 550, "atk": 140, "def": 60, "spd": 11,
+      "sanity": 90, "crit": 0.15, "critDmg": 1.6, "accuracy": 0.92, "dodge": 0.2
+    },
+    "passiveDescription": "【万物生】全队自动解除所有「中毒」类异常状态。体内的蛊王能感知周围的渊化孢子浓度。",
+    "lore": "南疆苗族蛊师，掌握「五毒鉴」与「禁蛊术」。目睹全村被渊化孢子吞噬，随主角杀出重围。好感度满后发现族人供奉的神是深渊宿主，弑杀伪神，进阶蛊王。",
+    "affinityMax": 100,
+    "questId": "quest_a_lian",
+    "trueEndingTokenId": "token_alian"
+  },
+  {
+    "id": "ye_mian",
+    "name": "叶眠",
+    "title": "玄门剑客 / 盲眼单体爆发",
+    "element": "wood",
+    "role": "sub_dps",
+    "preferredSlots": [2, 3],
+    "baseStats": {
+      "hp": 680, "atk": 210, "def": 70, "spd": 14,
+      "sanity": 75, "crit": 0.35, "critDmg": 2.5, "accuracy": 0.90, "dodge": 0.3
+    },
+    "passiveDescription": "【剑意·极】生命值低于30%时，所有攻击必定暴击，命中后将目标拉至1号位。",
+    "lore": "曾是归尘山庄最强剑客，因触碰禁忌秘籍被刺瞎双眼并逐出山庄。好感度满后进入山庄隐藏禁地，斩杀盲眼心魔，剑心通明。",
+    "affinityMax": 100,
+    "questId": "quest_ye_mian",
+    "trueEndingTokenId": "token_yemian"
+  },
+  {
+    "id": "qin_bing",
+    "name": "秦冰",
+    "title": "观山太保 / 水系法师",
+    "element": "water",
+    "role": "support",
+    "preferredSlots": [3, 4],
+    "baseStats": {
+      "hp": 580, "atk": 160, "def": 80, "spd": 11,
+      "sanity": 110, "crit": 0.1, "critDmg": 1.5, "accuracy": 0.93, "dodge": 0.18
+    },
+    "passiveDescription": "【水镜天心】每2回合为全体友方恢复少量San值，且解除一个「潮湿」或「冻结」状态。",
+    "lore": "观山太保成员，家族遗传病导致手臂偶尔长出鳞片。与主角因利结盟，好感度满后斩杀家族源头老水鬼，破除恶毒契约。",
+    "affinityMax": 100,
+    "questId": "quest_qin_bing",
+    "trueEndingTokenId": "token_qinbing"
+  },
+  {
+    "id": "xiao_ge",
+    "name": "齐七陵（小哥）",
+    "title": "北派核心 / 渊界克星",
+    "element": "water",
+    "role": "main_dps",
+    "preferredSlots": [1, 2],
+    "baseStats": {
+      "hp": 820, "atk": 190, "def": 110, "spd": 13,
+      "sanity": 85, "crit": 0.2, "critDmg": 1.8, "accuracy": 0.96, "dodge": 0.12
+    },
+    "passiveDescription": "【麒麟血·觉醒】攻击含水属性护盾的Boss时，额外造成20%真实伤害并反弹其下一次水系技能。",
+    "lore": "外表哑巴的北派核心成员，体内流着麒麟血。每几十年会陷入一次失忆重置。好感度满后前往极寒冰冢，斩断百年枷锁，彻底解开循环。",
+    "affinityMax": 100,
+    "questId": "quest_xiao_ge",
+    "trueEndingTokenId": "token_xiaoger"
+  },
+  {
+    "id": "lei_huo",
+    "name": "雷火",
+    "title": "爆破工程师 / 义体战士",
+    "element": "fire",
+    "role": "main_dps",
+    "preferredSlots": [2, 3],
+    "baseStats": {
+      "hp": 750, "atk": 200, "def": 90, "spd": 9,
+      "sanity": 95, "crit": 0.2, "critDmg": 2.2, "accuracy": 0.91, "dodge": 0.08
+    },
+    "passiveDescription": "【引爆专家】对拥有「渊化突变」词条的敌人造成额外50%伤害，且击杀时必然触发爆炸AOE。",
+    "lore": "大宇前工程师，装着机械臂。因目睹旧部被改造成怪物而叛逃。好感度满后回旧实验室超度被改造为怪物的战友。",
+    "affinityMax": 100,
+    "questId": "quest_lei_huo",
+    "trueEndingTokenId": "token_leihuo"
+  },
+  {
+    "id": "zhang_xuan",
+    "name": "张玄",
+    "title": "茅山掌教 / 道法天师",
+    "element": "fire",
+    "role": "support",
+    "preferredSlots": [3, 4],
+    "baseStats": {
+      "hp": 620, "atk": 150, "def": 100, "spd": 10,
+      "sanity": 115, "crit": 0.12, "critDmg": 1.6, "accuracy": 0.94, "dodge": 0.15
+    },
+    "passiveDescription": "【阳气护盾】战斗开始时为全队生成一层土系护盾。对「木」和「阴」属性敌人造成30%额外伤害。",
+    "lore": "茅山道统传人，寻找历代掌门遗骨。好感度满后前往养尸地开坛做法，寻回和氏璧残块，重塑天师道统。",
+    "affinityMax": 100,
+    "questId": "quest_zhang_xuan",
+    "trueEndingTokenId": "token_zhangxuan"
+  },
+  {
+    "id": "si_ma_hui",
+    "name": "司马灰",
+    "title": "退役老兵 / 重装战术核心",
+    "element": "earth",
+    "role": "tank",
+    "preferredSlots": [1, 2],
+    "baseStats": {
+      "hp": 1200, "atk": 130, "def": 180, "spd": 7,
+      "sanity": 130, "crit": 0.08, "critDmg": 1.4, "accuracy": 0.88, "dodge": 0.05
+    },
+    "passiveDescription": "【战术掩体】每4回合为全队提供一次物理伤害减免30%的战术掩护，持续1回合。",
+    "lore": "边境退役特种兵，见多识广，话不多但够义气。好感度满后前往野人谷寻回战友遗骨，完成当年未竟的撤退任务。",
+    "affinityMax": 100,
+    "questId": "quest_si_ma_hui",
+    "trueEndingTokenId": "token_simahui"
+  },
+  {
+    "id": "lao_jin",
+    "name": "老金（大金牙）",
+    "title": "鬼市行家 / 奇门遁甲",
+    "element": "earth",
+    "role": "support",
+    "preferredSlots": [3, 4],
+    "baseStats": {
+      "hp": 660, "atk": 120, "def": 120, "spd": 9,
+      "sanity": 140, "crit": 0.08, "critDmg": 1.3, "accuracy": 0.90, "dodge": 0.1
+    },
+    "passiveDescription": "【商道意志】在含「拍卖/竞价」机制的副本中，购回被抢装备时为全队提供等额San值防爆盾。",
+    "lore": "帝都鬼市掌门人，表面是古董商，实则精通奇门遁甲与阵法。好感度满后在鬼市被洗劫前转移高阶账本与镇市之宝，关闭大阵。",
+    "affinityMax": 100,
+    "questId": "quest_lao_jin",
+    "trueEndingTokenId": "token_laojin"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "zone_subway_0",
+    "name": "地下0号地铁站",
+    "uiDescription": "帝都最古老的深埋式地铁站，于三十年前神秘停运并封存。它是人类城市文明与地下深渊的交界点，由于渊化污染导致的时空扭曲，废弃的轨道已化作无法停息的幽灵循环。",
+    "type": "main_story",
+    "chapter": 1,
+    "minRank": "novice",
+    "abyssLevel": 1,
+    "fiveElements": ["earth", "water"],
+    "environment": {
+      "sanDrainPerStep": 2,
+      "elementDistortion": {},
+      "mutationThresholdTurns": 3
+    },
+    "boss": {
+      "id": "boss_qin_jiaxian",
+      "name": "迷阵之主·观山太保-秦假仙",
+      "title": "观山太保核心干将",
+      "appearance": "穿着现代勘探服、面带诡异面具、身体被真菌寄生、手持巨型罗盘法器的怪物。",
+      "element": "earth",
+      "shield": { "primary": "earth", "secondary": "water", "breakWith": ["wood", "earth"] },
+      "mechanics": [
+        {
+          "id": "mech_maze",
+          "name": "诡道迷阵",
+          "description": "每3回合切换为「迷阵模式」。玩家1-2-3-4站位被强制打乱，且技能五行克制反转。必须在2回合内通过「解谜」指令破解，否则全队承受大量San值伤害。",
+          "triggerEvery": 3
+        }
+      ],
+      "sanDmgOnAppear": 15
+    },
+    "mobs": [
+      {
+        "id": "mob_cursed_passenger",
+        "name": "渊化乘客",
+        "element": "earth",
+        "description": "被渊化污染的废弃地铁乘客，眼神空洞，动作机械。",
+        "specialTraits": ["攻击附带「恐慌」状态（降低目标输出伤害）"]
+      },
+      {
+        "id": "mob_gear_demon_water",
+        "name": "齿轮魔",
+        "element": "water",
+        "description": "地铁机械与真菌融合而成的奇异生命体。",
+        "specialTraits": ["攻击附带「潮湿」状态（增加受到的土属性伤害30%）"]
+      }
+    ],
+    "storyFlags": {
+      "required": [],
+      "unlock": ["chapter_1_complete", "fate_tree_unlocked"]
+    },
+    "coreDrops": ["map_fragment_northwest", "basic_purification_potion"]
+  },
+  {
+    "id": "zone_dayu_factory",
+    "name": "大宇科技地下兵工厂",
+    "uiDescription": "曾是大宇科技最绝密的军工研发基地，选址于一处具有强磁场的远古废墟之上。一场突如其来的渊化失控事件，让这里尖端的钢铁机械与不可名状的真菌组织血肉焊死，重力法则已然崩塌。",
+    "type": "main_story",
+    "chapter": 3,
+    "minRank": "rank3",
+    "abyssLevel": 3,
+    "fiveElements": ["metal"],
+    "environment": {
+      "sanDrainPerStep": 5,
+      "elementDistortion": { "fire": 0.7 },
+      "mutationThresholdTurns": 3
+    },
+    "boss": {
+      "id": "boss_machine_god_0",
+      "name": "自动化渊化指挥官·机神0号",
+      "title": "大宇科技终极造物",
+      "appearance": "巨大的二足步行机甲，外部覆盖着厚重的渊化真菌和咒文。",
+      "element": "metal",
+      "shield": { "primary": "metal", "secondary": "fire", "breakWith": ["fire", "water"] },
+      "mechanics": [
+        {
+          "id": "mech_antigravity",
+          "name": "反重力电场",
+          "description": "每3回合释放不规则电场，1-2-3-4站位随机颠倒。需2回合内用「战术指挥」破解，否则受大量物理和San伤害。唐绫可用「电磁干扰」暂缓。",
+          "triggerEvery": 3,
+          "requiredPartnerId": "tang_ling"
+        }
+      ],
+      "sanDmgOnAppear": 10
+    },
+    "mobs": [
+      {
+        "id": "mob_mech_dog",
+        "name": "渊化机械狗",
+        "element": "metal",
+        "description": "被大宇实验改造的半机械猎犬，被真菌寄生后失去控制。",
+        "specialTraits": ["移动速度极快", "攻击附带「撕裂」流血状态"]
+      },
+      {
+        "id": "mob_gear_demon_fire",
+        "name": "齿轮魔（火系）",
+        "element": "fire",
+        "description": "被工厂高温激活的机械残骸，嵌入了渊化燃料棒。",
+        "specialTraits": ["死亡时爆炸，对1号位造成火属性AOE伤害"]
+      }
+    ],
+    "requiredPartnerIds": ["lei_huo"],
+    "storyFlags": {
+      "required": ["chapter_2_complete"],
+      "unlock": ["chapter_3_complete"]
+    },
+    "coreDrops": ["secret_contract_fragment", "exoskeleton_blueprint"]
+  },
+  {
+    "id": "zone_panlong_base",
+    "name": "盘龙古董铺",
+    "uiDescription": "主角父母遗留下的唯一资产，表面是经营旧货的铺子，实则是勘探员的秘密整备基地。具备古董鉴定、装备强化与物资存储功能，是地下江湖中唯一的喘息之地。",
+    "type": "base",
+    "minRank": "novice",
+    "abyssLevel": 0,
+    "fiveElements": ["earth"],
+    "environment": {
+      "sanDrainPerStep": 0,
+      "elementDistortion": {},
+      "mutationThresholdTurns": 99
+    },
+    "mobs": [],
+    "storyFlags": {
+      "required": [],
+      "unlock": ["base_panlong_unlocked"]
+    },
+    "coreDrops": []
+  },
+  {
+    "id": "wildtomb_mine",
+    "name": "渊化矿坑",
+    "uiDescription": "被废弃的地下矿井，古老的矿道因渊化污染而变得扭曲，黑暗中有持续的凿击声，但这里早已没有活着的矿工。",
+    "type": "wild_tomb",
+    "minRank": "novice",
+    "abyssLevel": 1,
+    "fiveElements": ["earth"],
+    "environment": {
+      "sanDrainPerStep": 1,
+      "elementDistortion": {},
+      "mutationThresholdTurns": 4
+    },
+    "mobs": [
+      {
+        "id": "mob_drill_beast",
+        "name": "地底掘进者",
+        "element": "earth",
+        "description": "被渊化矿石融合的人型巨兽，使用岩石凿击。",
+        "specialTraits": ["高防御、高韧性，较难被控制"]
+      }
+    ],
+    "storyFlags": {
+      "required": [],
+      "unlock": []
+    },
+    "coreDrops": ["construction_ore", "basic_appraisal_crystal"]
+  },
+  {
+    "id": "zone_endgame_fate_gate",
+    "name": "界门残影",
+    "uiDescription": "位于长白山青铜门外的虚数维度。深渊磁场极度浓郁，这里不断生成过去、现在和未来可能发生的可怕幻象。没有终点，只有不断加深的污染。",
+    "type": "endgame",
+    "minRank": "special",
+    "abyssLevel": 5,
+    "fiveElements": ["metal", "wood", "water", "fire", "earth"],
+    "environment": {
+      "sanDrainPerStep": 10,
+      "elementDistortion": {},
+      "mutationThresholdTurns": 2
+    },
+    "mobs": [],
+    "storyFlags": {
+      "required": ["chapter_10_complete"],
+      "unlock": []
+    },
+    "coreDrops": ["legend_weapon_shard", "fate_token_universal", "exclusive_title_fragment"]
+  }
+]
