@@ -67,6 +67,8 @@ export interface BattleAction {
   actorId: string;
   skillId: string;
   targetIds: string[];
+  dmgMulti?: number;
+  sanDmg?: number;
 }
 
 /** 伤害计算结果 */

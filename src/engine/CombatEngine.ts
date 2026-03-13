@@ -111,7 +111,7 @@ export function processPlayerAction(
     const target = [...newState.playerUnits, ...newState.enemyUnits].find(u => u.id === targetId);
     if (!target || !target.isAlive) continue;
     const isEnemy = newState.enemyUnits.some(u => u.id === targetId);
-    newState = applyDamageToUnit(newState, actor, target, 1.0, 0, isEnemy);
+    newState = applyDamageToUnit(newState, actor, target, action.dmgMulti ?? 1.0, action.sanDmg ?? 0, isEnemy);
   }
   return newState;
 }
